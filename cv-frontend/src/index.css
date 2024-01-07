@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Lato', 'Outfit', 'Tilt Prism', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.polygon {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  clip-path: polygon(50% 2.5%, 2% 25%, 2% 75%, 50% 97.5%, 99% 75%, 99% 25%);
+  z-index: 20;
+}
+.polygon-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #D1C5AB;
+  clip-path: polygon(50% 0%, 3% 23.5%, 3% 77%, 50% 100%, 98% 76.5%, 98% 23.5%);
+  z-index: 20;
+}
+
+::-webkit-scrollbar {
+  position:absolute;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1F2128;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4B5062;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333644;
+}
