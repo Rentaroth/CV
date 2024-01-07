@@ -1,13 +1,14 @@
 import './App.css'
 
 import { Schema1 } from "./content"
+import { AppProvider } from './context/provider/appProvider'
 
 function App() {
 
   return (
-    <>
-    <Schema1 />
-    </>
+    <AppProvider>
+      <Schema1 />
+    </AppProvider>
   )
 }
 
