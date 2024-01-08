@@ -12,6 +12,10 @@ function Schema1() {
   const [workExp, setWorkExp] = useState('');
   const [languages, setLanguages] = useState('');
 
+  function redirectTo(url) {
+    window.location.href = `https://${url}`;
+  }
+
   function organize(state, section) {
     if(state.data) {
       if(section !== 0) {
@@ -179,7 +183,7 @@ function Schema1() {
               <div className=" w-full flex gap-1">
               <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="https://i.postimg.cc/43CmrdSp/repo-icon.png" alt="phone_icon" /></div>
                 <div className=" w-full pl-4 text-[8px] md:text-[16px] lg:text-xl flex items-center justify-start">
-                  <p className=" text-start rounded-md px-2"><a className=" cursor-pointer" href={info.github}>{info.github}</a></p>
+                  <p className=" text-start rounded-md px-2"><span className=" cursor-pointer" onClick={() => {redirectTo(info.github)}}>{info.github}</span></p>
                 </div>
               </div>
               <div className=" w-full flex gap-1">
