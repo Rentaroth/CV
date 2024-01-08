@@ -144,7 +144,7 @@ function Schema1() {
           <div className=" w-[40%] xl:w-[34%] h-full z-30">
             <div className=" w-full h-full max-md:h-[90%] max-md:mt-5 max-md:px-2 md:px-4 lg:px-6 relative flex items-center justify-center z-10">
               <div className=" polygon-border"></div>
-              <img className=" polygon object-cover" src="src\assets\FotoCV.jpg" alt="profile_photo" />
+              <img className=" polygon object-cover" src="https://i.postimg.cc/jSMMXp3V/FotoCV.jpg" alt="profile_photo" />
             </div>
           </div>
           <div className=" w-[60%] xl:w-[66%] h-full flex justify-center items-center">
@@ -165,25 +165,25 @@ function Schema1() {
             </div>
             <div className=" flex flex-col my-4 gap-2 xl:gap-4">
               <div className=" w-full flex gap-1">
-                <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="./src/assets/PHONE_ICON.png" alt="phone_icon" /></div>
+                <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="https://i.postimg.cc/rFFWJKBm/PHONE-ICON.png" alt="phone_icon" /></div>
                 <div className=" w-full pl-4 text-[8px] md:text-[16px] lg:text-xl flex items-center justify-start">
                   <p className=" text-start rounded-md px-2">{info.phone}</p>
                 </div>
               </div>
               <div className=" w-full flex gap-1">
-              <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="./src/assets/mail_icon.png" alt="phone_icon" /></div>
+              <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="https://i.postimg.cc/bJckHLPc/mail-icon.png" alt="phone_icon" /></div>
                 <div className=" w-full pl-4 text-[8px] md:text-[16px] lg:text-xl flex items-center justify-start">
                   <p className=" text-start rounded-md px-2">{info.email}</p>
                 </div>
               </div>
               <div className=" w-full flex gap-1">
-              <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="./src/assets/repo_icon.png" alt="phone_icon" /></div>
+              <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="https://i.postimg.cc/43CmrdSp/repo-icon.png" alt="phone_icon" /></div>
                 <div className=" w-full pl-4 text-[8px] md:text-[16px] lg:text-xl flex items-center justify-start">
                   <p className=" text-start rounded-md px-2">{info.github}</p>
                 </div>
               </div>
               <div className=" w-full flex gap-1">
-              <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="./src/assets/place_icon.png" alt="phone_icon" /></div>
+              <div className=" max-sm:w-[15vw] max-sm:h-[3vh] sm:w-[8vw] lg:w-[10vw] lg:h-[5vh] sm:h-[4vh] xl:h-[6vh] pr-2 lg:pr-4 flex items-center justify-end bg-header -skew-x-[20deg] origin-top-right rounded-tr-md"><img className=" skew-x-[20deg] max-sm:w-[12px] sm:w-[20px] lg:w-[30px] xl:w-[40px]" src="https://i.postimg.cc/PrRLQKb3/place-icon.png" alt="phone_icon" /></div>
                 <div className=" w-full pl-4 text-[8px] md:text-[16px] lg:text-xl flex items-center justify-start">
                   <p className=" text-start rounded-md px-2">{info.province}, {info.country}</p>
                 </div>

@@ -1,5 +1,3 @@
-import './App.css'
-
 import { Schema1 } from "./content"
 import { AppProvider } from './context/provider/appProvider'
 
