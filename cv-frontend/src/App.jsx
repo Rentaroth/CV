@@ -1,8 +1,8 @@
-import { Schema1 } from "./content"
+import "./App.css";
+import { Schema1 } from "./content";
 import { AppProvider } from './context/provider/appProvider'
 
 function App() {
-
   return (
     <AppProvider>
       <Schema1 />

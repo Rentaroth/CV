@@ -1,0 +1,13 @@
+.polygon {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 3%, 2% 31%, 2% 69%, 50% 97%, 99% 70%, 99% 30%);
+}
+
+.polygon-border {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #D1C5AB;
+  clip-path: polygon(50% 0%, 3% 30%, 3% 70%, 50% 100%, 98% 71.5%, 98% 28.5%);
+}

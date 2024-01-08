@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { context } from "../../context";
+import { Loading } from "../";
 
 function Schema1() {
   const contentData = useContext(context);
@@ -137,8 +138,7 @@ function Schema1() {
       setLanguages(tempLanguages);
     }
   }, [info])
-  return(
-    <>
+  return(info ? (<>
       <div className=" h-[100vh] w-full bg-header overflow-y-auto">
         <section className=" max-sm:h-[20vh] max-sm:mb-2 sm:h-[35vh] md:h-fit w-[100%] xl:h-fit px-[1vw] mt-[2%] bg-header flex justify-center items-center z-0" id="header">
           <div className=" w-[40%] xl:w-[34%] h-full z-30">
@@ -267,7 +267,7 @@ function Schema1() {
           </section>
         </div>
       </div>
-    </>
+    </>) : (<Loading />)
   );
 }
 
