@@ -16,36 +16,8 @@ function Schema1() {
     window.location.href = `https://${url}`;
   }
 
-  function organize(state, section) {
-    if(state.data) {
-      if(section !== 0) {
-        const result = state.data[section];
-        const res = Object.values(result)[0];
-        return res;
-      }
-      const result = state.data[section];
-      const res = Object.values(result)[0][0];
-      return res;
-    }
-  }
   useEffect(() => {
-    if(contentData.data) {
-      const organizedData = {
-        name: organize(contentData, 0).name,
-        lastName: organize(contentData, 0).last_name,
-        phone: organize(contentData, 0).phone,
-        email: organize(contentData, 0).email,
-        github: organize(contentData, 0).github,
-        country: organize(contentData, 0).country,
-        province: organize(contentData, 0).province,
-        skills: Array.from(organize(contentData, 3)),
-        softSkills: Array.from(organize(contentData, 4)),
-        education: Array.from(organize(contentData, 2)),
-        workExp: Array.from(organize(contentData, 1)),
-        languages: Array.from(organize(contentData, 5)),
-      };
-      setInfo(organizedData);
-    }
+    setInfo(contentData.data)
   }, [contentData])
 
   useEffect(() => {
@@ -94,8 +66,8 @@ function Schema1() {
             (<div key={element._id} className=" w-[80%] h-fit m-2 px-4 my-5">
               <h3 className=" text-[8px] md:text-[12px] lg:text-md xl:text-xl font-bold">{initialYear == finalYear ? initialYear : (`${initialYear} - ${finalYear}`)}</h3>
               <h2 className=" text-[12px] md:text-[16px] lg:text-xl xl:text-2xl font-bold">{element.title}</h2>
-              <p className=" text-[8px] md:text-[12px] lg:text-[14px] xl:text-lg">{element.description}</p>
               <p className=" text-[8px] md:text-[12px] lg:text-[14px] xl:text-lg">{element.institute}</p>
+              {element.description.map(subelement => <p key={element.description.indexOf(subelement)} className=" text-[8px] md:text-[12px] lg:text-[14px] xl:text-lg">- {subelement}</p>)}
             </div>)
           );
         })
@@ -110,7 +82,7 @@ function Schema1() {
               <h3 className=" text-[8px] md:text-[12px] lg:text-md xl:text-xl font-bold">{element.serviceTime.toUpperCase()}</h3>
               <h2 className=" text-[12px] md:text-[16px] lg:text-xl xl:text-2xl font-bold">{element.position}</h2>
               <p className=" text-[8px] md:text-[12px] lg:text-[14px] xl:text-lg font-bold">{element.company.toUpperCase()}</p>
-              <p className=" text-[8px] md:text-[12px] lg:text-[14px] xl:text-lg">{element.description}</p>
+              {element.description.map(subelement => <p key={element.description.indexOf(subelement)} className=" text-[8px] md:text-[12px] lg:text-[14px] xl:text-lg">- {subelement}</p>)}
             </div>)
           );
         })
@@ -208,26 +180,6 @@ function Schema1() {
                   {filledSoftSkills}
                 </div>
               </div>
-              {/* <div className=" w-full h-fit py-4">
-                <div className=" bg-header w-[90%] h-[5vh] lg:h-[6.5vh] mt-5 px-5 text-md text-right text-light font-primary font-light rounded-tr-md -skew-x-[20deg] origin-top-right flex items-center justify-start">
-                  <h2 className=" skew-x-[20deg] text-lg md:text-xl font-normal lg:ml-[3vw] xl:text-2xl">REFERENCES</h2>
-                </div>
-                <div className=" m-4">
-                  <h2 className=" text-[12px] md:text-[16px] lg:text-lg font-bold">PERSON FULL NAME HERE</h2>
-                  <div className=" text-[8px] md:text-[14px] lg:text-md flex justify-between">
-                    <h3 className=" ">POSITION HERE</h3>
-                    <h3 className=" ">COMPANY HERE</h3>
-                  </div>
-                  <div className=" flex justify-start gap-4">
-                    <h3 className=" text-[8px] md:text-[12px] lg:text-[12px]">PHONE:</h3>
-                   <h3 className=" text-[8px] md:text-[12px] lg:text-[12px]">+00 000 000 0000</h3> 
-                  </div>
-                  <div className=" flex justify-start gap-4">
-                    <h3 className=" text-[8px] md:text-[12px] lg:text-[14px]">MAIL:</h3>
-                   <h3 className=" text-[8px] md:text-[12px] lg:text-[14px]">xxxxxxxxxx@mail.com</h3> 
-                  </div>
-                </div>
-              </div> */}
             </div>
           </section>
           <section className=" w-full h-auto bg-light" id="right">
