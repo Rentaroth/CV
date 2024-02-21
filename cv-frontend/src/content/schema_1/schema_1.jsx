@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { useContext } from "react";
-import { context } from "../../context";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchData } from "../../store/slices/dataSlice";
 import { Loading } from "../";
 
 function Schema1() {
-  const contentData = useContext(context);
-  const [info, setInfo] = useState('');
+  const dispatch = useDispatch();
+  let info = useSelector(state => state.data.data);
   const [filledSkills, setFilledSkills] = useState('');
   const [filledSoftSkills, setFilledSoftSkills] = useState('');
   const [education, setEducation] = useState('');
@@ -17,8 +17,11 @@ function Schema1() {
   }
 
   useEffect(() => {
-    setInfo(contentData.data)
-  }, [contentData])
+    async function load() {
+      dispatch(fetchData());
+    }
+    load()
+  }, [])
 
   useEffect(() => {
     if(Array.isArray(info.skills)) {

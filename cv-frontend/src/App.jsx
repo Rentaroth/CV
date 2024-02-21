@@ -1,13 +1,16 @@
 import "./App.css";
+// import { connect } from "react-redux";
+import { useEffect } from "react";
 import { Schema1 } from "./content";
-import { AppProvider } from './context/provider/appProvider'
+import { useDispatch } from "react-redux";
+// import { AppProvider } from "./context/provider/appProvider";
 
 function App() {
   return (
-    <AppProvider>
+    <>
       <Schema1 />
-    </AppProvider>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

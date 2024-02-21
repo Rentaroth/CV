@@ -16,7 +16,7 @@ export default ({ command, mode }) => {
     })
   }
   return defineConfig({
-    plugins: [react(), tailwindcss(), autoprefixer(), TanStackRouterVite()],
+    plugins: [react(), tailwindcss(), autoprefixer()],
     build: {
       outDir: "./dist/"
     }
