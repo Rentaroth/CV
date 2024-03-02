@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getData } from "../../api/requests";
+import { Loading } from "../../content";
 
 const initialState = {
-  data: {},
+  data: 'Loading',
 };
 
 export const dataSlice = createSlice({
